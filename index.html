@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bolt Trip Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Bolt Trip Calculator</h1>
+        <form id="calcForm">
+            <label>Target Income (ZAR): <input type="number" id="targetIncome" required></label>
+            <label>Period:
+                <select id="period">
+                    <option value="day">Per Day</option>
+                    <option value="week">Per Week</option>
+                    <option value="month">Per Month</option>
+                </select>
+            </label>
+            <label>Driving Days per Week: <input type="number" id="drivingDays" value="5" required></label>
+            <label>Average Trip Distance (km): <input type="number" id="tripDistance" required></label>
+            <label>Average Fare per Trip (ZAR): <input type="number" id="farePerTrip" required></label>
+            <label>Bolt Commission (%): <input type="number" id="boltCommission" value="20" required></label>
+            <label>Fuel Price (ZAR/Liter): <input type="number" id="fuelPrice" required></label>
+            <label>Fuel Consumption (L/100km): <input type="number" id="fuelConsumption" value="4.8" required></label>
+            <label>Maintenance Cost (ZAR/km): <input type="number" id="maintenanceCost" value="0.5" required></label>
+            <button type="submit">Calculate</button>
+        </form>
+        <div id="results"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
